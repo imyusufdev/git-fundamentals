@@ -1,8 +1,24 @@
+.body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "roboto", "Arial", sans-serif;
+  letter-spacing: 0.5px;
+}
+
 .site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #fff;
 }
 
-.site-nav li {
+.site-header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.sitenav-list {
+  display: flex;
   list-style: none;
 }
 
@@ -25,6 +41,9 @@
 }
 
 .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #252420;
   color: #fff;
 }
@@ -42,7 +61,7 @@
 .hero-heading {
   font-size: 40px;
   line-height: 1.2;
-  letter-spacing: o.5px;
+  font-family: "roboto condensed", "roboto", "Arial", sans-serif;
 }
 
 .hero-img {
@@ -50,22 +69,23 @@
   height: 510px;
 }
 
-.hero-text {
-  font-style: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
-}
-
+/* Features */
 .features-heading {
   width: 440px;
   font-size: 72px;
   line-height: 1.2;
+  font-family: "roboto condensed", "roboto", "Arial", sans-serif;
   letter-spacing: 0.5px;
 }
 
-.ul-site-socials li {
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.feature-list {
   width: 340px;
-  list-style-type: none;
 }
 
 .feature-icon-wrapper {
@@ -77,16 +97,13 @@
 .feature-title {
   font-style: 24px;
   line-height: 1.2;
-  letter-spacing: 0.5px;
-}
-
-.feature-info {
-  font-style: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
+  font-family: "roboto condensed", "roboto", "Arial", sans-serif;
 }
 
 .promo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #252420;
   color: #fff;
 }
@@ -98,14 +115,7 @@
 .promo-heading {
   font-size: 40px;
   line-height: 48px;
-}
-
-.promo-text {
-  color: #FFF;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.5px;
+  font-family: "roboto condensed", "roboto", "Arial", sans-serif;
 }
 
 .promo-highlight {
@@ -118,8 +128,20 @@
   object-fit: cover;
 }
 
-.fite-footer {
+/* Footer */
+.site-footer {
   background-color: #f8f8f8;
+}
+
+.site-footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer-socials {
+display:flex;
+align-items: center;
 }
 
 .site-footer ul {
@@ -131,13 +153,16 @@
   background-color: rgba(37, 36, 32, 0.5);
 }
 
+.site-footer-bottom {
+display: flex;
+}
+
 .site-footer-links {
- width: 224px;
+  width: 224px;
+  line-height: 19px;
 }
 
 .site-footer-links a {
-font-size: 16px;
-line-height: 19px;
-text-decoration: none;
-color: #252420;
+  text-decoration: none;
+  color: #252420;
 }
